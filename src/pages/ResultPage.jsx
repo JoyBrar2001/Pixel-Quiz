@@ -20,7 +20,8 @@ const ResultPage = () => {
   const query = useQuery();
 
   const handleClick = () => {
-    // Go back to Flutter app
+     window.flutter_inappwebview.callHandler('MessageChannel', 'navigateToNewScreen');
+            Toaster.postMessage('buttonClicked');
   }
 
   
