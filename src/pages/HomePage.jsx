@@ -3,6 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import GoogleLogo from '/Google Logo.png';
 import WelcomeScreenPoster from '/Welcome Screen Poster.png';
 import ImageLoader from '../Components/ImageLoader';
+import { QuizNavbar } from '../Components';
 
 const contest_id = 1;
 
@@ -30,6 +31,7 @@ const HomePage = () => {
 
   return (
     <div className="bg-white font-googleSans min-h-screen w-full flex flex-col justify-start items-center">
+      <QuizNavbar />
       <header className='w-full py-2 gap-2 flex flex-col'>
         <div className='w-full max-w-2xl mx-auto'>
           <ImageLoader src={WelcomeScreenPoster} />

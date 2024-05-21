@@ -1,21 +1,9 @@
 import React from 'react'
-import { FaChevronLeft } from "react-icons/fa";
-import { MdLogout } from "react-icons/md";
-import { Link } from 'react-router-dom';
 
-const QuizNavbar = ({ className }) => {
+const QuizNavbar = () => {
   return (
-    <nav className={`flex justify-center items-center px-3 py-3 relative ${className}`}>
-      {/* <Link to="/" className='bg-gray-100 text-slate-600 p-1.5 rounded-lg absolute left-2'>
-        <FaChevronLeft />
-      </Link> */}
-
-      <h1 className='text-lg font-bold'>Pixel Quiz</h1>
-
-      {/* <div className='bg-gray-100 text-slate-600 p-1.5 flex gap-1 rounded-lg absolute right-2'>
-        <MdLogout color='red' />
-        <p className='text-xs font-medium'>Sign Out</p>
-      </div> */}
+    <nav className='fixed top-0 flex justify-center items-center py-1 w-full bg-yellow-500/50 z-50'>
+      <h1 className='text-sm'>This version is for testing only.</h1>
     </nav>
   )
 }

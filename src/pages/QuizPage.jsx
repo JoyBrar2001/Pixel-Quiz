@@ -129,6 +129,7 @@ const QuizPage = () => {
 
   return (
     <div className='w-full font-googleSans min-h-screen bg-slate-50'>
+      <QuizNavbar />
       <main className='w-full h-full mt-6 max-w-2xl mx-auto px-4 sm:px-6 md:px-8'>
         {currentQuestion && <>
           <Timer time={remainingTime} imgsrc={currentQuestion.imageUrl} />
